@@ -1,0 +1,22 @@
+{
+  "name": "sqs-worker",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node worker.js",
+    "dev": "node worker.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@aws-sdk/client-rekognition": "^3.864.0",
+    "@aws-sdk/client-s3": "^3.864.0",
+    "@aws-sdk/client-sqs": "^3.864.0",
+    "dotenv": "^17.2.1",
+    "mysql2": "^3.14.3",
+    "xlsx": "^0.18.5"
+  }
+}

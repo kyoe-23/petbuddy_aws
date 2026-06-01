@@ -1,0 +1,43 @@
+{
+  "name": "pet-buddy",
+  "version": "1.0.0",
+  "description": "Pet Buddy Application - Root workspace",
+  "private": true,
+  "workspaces": [
+    "backend/server",
+    "frontend/pet-buddy-ui"
+  ],
+  "scripts": {
+    "start:server": "cd backend/server && npm start",
+    "start:ui": "cd frontend/pet-buddy-ui && npm start",
+    "dev": "concurrently \"npm run start:server\" \"npm run start:ui\""
+  },
+  "dependencies": {
+    "@aws-amplify/react-native": "^1.1.10",
+    "@babel/runtime": "^7.28.2",
+    "@react-native-async-storage/async-storage": "^2.2.0",
+    "@react-native-community/netinfo": "^11.4.1",
+    "aws-amplify": "^6.15.5",
+    "core-js": "^3.45.0",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.14.3",
+    "react-native-aws3": "^0.0.9",
+    "socket.io-client": "^4.8.1"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "overrides": {
+    "react": "19.0.0",
+    "react-dom": "19.0.0"
+  },
+  "keywords": [
+    "pet",
+    "buddy",
+    "react-native",
+    "expo",
+    "nodejs"
+  ],
+  "author": "",
+  "license": "ISC"
+}
