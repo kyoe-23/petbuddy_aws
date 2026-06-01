@@ -210,6 +210,3 @@ sqs-worker/
 
 ---
 
-## 📜 라이선스
-
-[MIT](LICENSE)
